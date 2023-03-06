@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+node_modules/
+
+# cahe
+.npm
+.eslintcache
+
+# testing
+/coverage
+coverage
+.nyc_output
+cypress/videos
+cypress/screenshots
+
+# misc
+.DS_Store
+.env
+.vscode
+*.code-workspace
+
+# logs
+logs
+*.log
+npm-debug.log*
+npm-debug.log
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
