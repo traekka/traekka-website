@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md}\""
+    "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore"
   },
   "dependencies": {
     "next": "13.2.3",
