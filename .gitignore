@@ -1,10 +1,24 @@
 # dependencies
 /node_modules
 node_modules/
+/.pnp
+.pnp.js
 
 # cahe
 .npm
 .eslintcache
+
+# next.js
+/.next/
+/out/
+
+# typescript
+*.tsbuildinfo
+
+# tailwind
+.turbo
+.vscode
+styles/dist.css
 
 # testing
 /coverage
@@ -13,11 +27,8 @@ coverage
 cypress/videos
 cypress/screenshots
 
-# misc
-.DS_Store
-.env
-.vscode
-*.code-workspace
+# production
+/build
 
 # logs
 logs
@@ -25,8 +36,22 @@ logs
 npm-debug.log*
 npm-debug.log
 
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
 # runtime data
 pids
 *.pid
 *.seed
 *.pid.lock
+
+# misc
+.DS_Store
+.env*
+!.env*.example
+.vscode
+*.code-workspace
+*.pem
