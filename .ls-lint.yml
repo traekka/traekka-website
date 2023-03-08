@@ -1,0 +1,13 @@
+ls:
+  .css: camelCase
+  .tsx: camelCase
+  .d.tsx: PascalCase
+  .json: kebab-case
+
+ignore:
+  - node_modules
+  - .github
+  - .git
+  - .next
+  - src/pages/_app.tsx
+  - src/pages/_document.tsx
