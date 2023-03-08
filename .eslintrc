@@ -1,12 +1,24 @@
 {
   // for JavaScript files
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "next", "next/core-web-vitals"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
   "overrides": [
     // for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "plugins": ["@typescript-eslint", "unused-imports", "tailwindcss", "simple-import-sort", "jsx-a11y"],
-      "extends": ["plugin:tailwindcss/recommended", "airbnb-typescript", "next/core-web-vitals"],
+      "extends": [
+        "plugin:tailwindcss/recommended",
+        "airbnb-typescript",
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
       "parserOptions": {
         "project": "./tsconfig.json"
       },
