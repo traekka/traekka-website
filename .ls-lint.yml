@@ -1,8 +1,13 @@
 ls:
   .css: camelCase
-  .tsx: camelCase
+  .js: camelCase
+  .ts: camelCase
+  .tsx: camelCase | PascalCase
   .d.tsx: PascalCase
   .json: kebab-case
+  .yaml: kebab-case
+  src/pages:
+    .dir: lowercase
 
 ignore:
   - node_modules
@@ -11,3 +16,6 @@ ignore:
   - .next
   - src/pages/_app.tsx
   - src/pages/_document.tsx
+  - next-env.d.ts
+  - *.config.js
+
