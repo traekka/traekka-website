@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint && npx stylelint '**/*.css' && npx ls-lint",
+    "lint:staged": "lint-staged",
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore"
   },
   "dependencies": {
@@ -33,6 +34,7 @@
     "eslint-plugin-simple-import-sort": "10.0.0",
     "eslint-plugin-tailwindcss": "3.10.1",
     "eslint-plugin-unused-imports": "2.0.0",
+    "lint-staged": "13.1.2",
     "postcss": "8.4.21",
     "prettier": "2.8.4",
     "stylelint": "15.2.0",
