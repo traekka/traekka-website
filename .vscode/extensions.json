@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "joshbolduc.commitlint",
+    "knisterpeter.vscode-commitizen",
+    "nixon.env-cmd-file-syntax",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.npm-intellisense"
+  ]
+}
