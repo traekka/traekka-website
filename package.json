@@ -13,7 +13,8 @@
     "lint-staged": "lint-staged",
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore",
     "prepare": "husky install",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build",
+    "check-types": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "next": "13.2.3",
