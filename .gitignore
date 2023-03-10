@@ -17,7 +17,6 @@ node_modules/
 
 # tailwind
 .turbo
-.vscode
 styles/dist.css
 
 # testing
