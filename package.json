@@ -9,7 +9,9 @@
     "lint": "next lint && npx stylelint '**/*.css' && npx ls-lint",
     "lint-staged": "lint-staged",
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "analyze": "ANALYZE=true next build",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "next": "13.2.3",
