@@ -9,7 +9,7 @@
     "export": "next export",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
-    "lint": "next lint && npx stylelint '**/*.css' && npx ls-lint",
+    "lint": "next lint && npx stylelint '**/*.css' --ignore-path .gitignore && npx ls-lint",
     "lint-staged": "lint-staged",
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore",
     "prepare": "husky install",
