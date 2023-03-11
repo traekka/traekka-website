@@ -17,5 +17,10 @@ ignore:
   - src/pages/_app.tsx
   - src/pages/_document.tsx
   - next-env.d.ts
-  - *.config.js
-
+  - commitlint.config.js
+  - lint-staged.config.js
+  - next.config.js
+  - postcss.config.js
+  - prettier.config.js
+  - stylelint.config.js
+  - tailwind.config.js
