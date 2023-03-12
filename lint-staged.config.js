@@ -4,4 +4,5 @@ module.exports = {
   "*.{json,yaml,yml,md}": ["prettier --ignore-unknown --write"],
   "*.{css,scss,less}": ["stylelint --fix", "prettier --write"],
   "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
+  "*": "ls-lint",
 };
