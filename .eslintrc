@@ -46,6 +46,15 @@
         "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "no-use-before-define": ["error", { "functions": false, "classes": false }]
       }
+    },
+    // Configuration for e2e testing with Cypress
+    {
+      "files": ["cypress/**/*.ts"],
+      "plugins": ["cypress"],
+      "extends": ["plugin:cypress/recommended"],
+      "parserOptions": {
+        "project": "./cypress/tsconfig.json"
+      }
     }
   ]
 }
