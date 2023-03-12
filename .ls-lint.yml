@@ -12,6 +12,7 @@ ls:
 ignore:
   - node_modules
   - out
+  - cypress/e2e
   - .github
   - .git
   - .next
