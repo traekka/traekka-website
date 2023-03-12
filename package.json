@@ -14,7 +14,13 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore && npx stylelint '**/*.{css,scss}' --fix --ignore-path .gitignore",
     "prepare": "husky install",
     "analyze": "ANALYZE=true next build",
-    "check-types": "tsc --noEmit --pretty"
+    "check-types": "tsc --noEmit --pretty",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test dev http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component"
   },
   "dependencies": {
     "next": "13.2.3",
