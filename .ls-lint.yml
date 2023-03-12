@@ -11,6 +11,7 @@ ls:
 
 ignore:
   - node_modules
+  - out
   - .github
   - .git
   - .next
@@ -24,3 +25,4 @@ ignore:
   - prettier.config.js
   - stylelint.config.js
   - tailwind.config.js
+  - cypress.config.js
