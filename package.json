@@ -14,7 +14,7 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml,js,ts,tsx,md}' --write --ignore-path .gitignore && npx stylelint '**/*.{css,scss}' --fix --ignore-path .gitignore",
     "prepare": "husky install",
     "analyze": "ANALYZE=true next build",
-    "check-types": "tsc --noEmit --pretty",
+    "check-types": "tsc --noEmit --pretty && tsc --project cypress --noEmit --pretty",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
     "e2e": "start-server-and-test dev http://localhost:3000 cypress",
