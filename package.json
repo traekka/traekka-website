@@ -21,7 +21,8 @@
     "e2e": "start-server-and-test dev http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless",
     "component": "cypress open --component",
-    "component:headless": "cypress run --component"
+    "component:headless": "cypress run --component",
+    "ci": "run-s lint check-types test e2e:headless build"
   },
   "dependencies": {
     "next": "13.2.3",
