@@ -22,6 +22,7 @@
     "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless",
     "component": "cypress open --component",
     "component:headless": "cypress run --component",
+    "pery": "percy exec -- npm run e2e:headless",
     "ci": "run-s lint check-types test e2e:headless build"
   },
   "dependencies": {
@@ -35,6 +36,8 @@
     "@commitlint/cz-commitlint": "17.4.4",
     "@ls-lint/ls-lint": "1.11.2",
     "@next/bundle-analyzer": "13.2.4",
+    "@percy/cli": "1.20.3",
+    "@percy/cypress": "3.1.2",
     "@testing-library/cypress": "9.0.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
