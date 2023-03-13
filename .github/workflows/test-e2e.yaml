@@ -20,5 +20,16 @@ jobs:
           cache: "npm"
       - run: npm install
 
-      - name: Test e2e
-        run: npm run e2e:headless
+      - name: Test cypress e2e
+        uses: cypress-io/github-action@v5
+        with:
+          install: false
+          start: npm run dev
+          wait-on: "http://localhost:3000"
+          browser: chrome
+          record: true
+          parallel: true
+        env:
+          COMMIT_INFO_MESSAGE: ${{github.event.pull_request.title}}
+          COMMIT_INFO_SHA: ${{github.event.pull_request.head.sha}}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
