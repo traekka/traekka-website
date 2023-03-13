@@ -9,8 +9,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black	">
-        <h1 className="text-9xl font-bold underline">Hi you are on the test homepage</h1>
+      <main>
+        <h1 className="text-5xl font-bold">Hi you are on the test homepage</h1>
+        <div className="text-xl">
+          <p>Here is a base text for the homepage to test changes</p>
+        </div>
       </main>
     </>
   );
