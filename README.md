@@ -28,7 +28,7 @@ Here are some of the features included in our project:
 - 🦊 [Husky](https://typicode.github.io/husky) for Git hooks to check and enforce most of the above
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 
-- 🦺 Unit Testing with Jest and Mocha
+- 🦺 Unit Testing with Jest
 - 🧪 End-to-end testing with Cypress
 - 🔍 Visual testing with Percy
 - 👷 GitHub Actions integration to run tests on pull requests
