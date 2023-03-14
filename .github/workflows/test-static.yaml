@@ -28,7 +28,7 @@ jobs:
 
       - run: npm run build-prod
 
-  test:
+  lint:
     strategy:
       matrix:
         node-version: [18.x]
