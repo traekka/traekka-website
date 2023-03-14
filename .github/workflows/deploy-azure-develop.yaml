@@ -28,6 +28,8 @@ jobs:
       - name: Build
         run: npm run build-prod
 
+      - run: echo ${{ github.event.pull_request.title }}
+
       - name: Deploy to Azure Static WebApp
         id: deploy
         uses: azure/static-web-apps-deploy@v1
@@ -38,6 +40,7 @@ jobs:
           api_location: ""
           output_location: ""
           skip_app_build: true
+          is_static_export: true
 
       - name: Set Azure Static WebApp URL
         id: set-url
@@ -85,3 +88,19 @@ jobs:
           command: npx percy exec -- cypress run --config video=false,screenshotOnRunFailure=false,baseUrl=${{ env.STATIC_WEB_APP_URL}}
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
+  clean-up:
+    name: Delete Azure Static WebApp pre-production environment
+    runs-on: ubuntu-latest
+    environment: testing
+    needs: [test, build-deploy]
+    env:
+      STATIC_WEB_APP_DEPLOYMENT_NAME: "#${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
+
+    steps:
+      - name: Delete Azure Static WebApp pre-production environment
+        uses: azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_DEVELOP }}
+          action: "close"
+          deployment_environment: ${{ env.STATIC_WEB_APP_DEPLOYMENT_NAME }}
