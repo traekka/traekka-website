@@ -9,7 +9,7 @@ env:
 
 jobs:
   build-deploy:
-    name: Build and Deploy to Azure
+    name: Build and Deploy to Azure static Web Apps
     runs-on: ubuntu-latest
     environment: testing
 
