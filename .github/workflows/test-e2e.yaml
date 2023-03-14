@@ -2,7 +2,6 @@ name: test-e2e
 
 on:
   pull_request:
-  push:
     branches: [main, develop]
 
 jobs:
@@ -13,11 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Use Node.js 18.x
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
           cache: "npm"
+
       - run: npm install
 
       - name: Test cypress e2e
