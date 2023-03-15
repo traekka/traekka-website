@@ -23,6 +23,7 @@ Here are some of the features included in our project:
 - 🌈 [Stylelint](https://stylelint.io) (default NextJS and Tailwind CSS configuration)
 - 🎨 [Prettier](https://prettier.io) for consistent code formatter with ESLint and Stylelint integration
 - 🚫 [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
+- 🗂️ [Ls-Lint](https://ls-lint.org/) to lint file and folder names
 - 📓 [Commitlint](https://commitlint.js.org/) to lint git commit messages
 - ✍️ [Commitizen](https://github.com/commitizen/cz-cli) to write standard compliant commit messages integrated with VS Code
 - 🦊 [Husky](https://typicode.github.io/husky) for Git hooks to check and enforce most of the above
@@ -34,6 +35,9 @@ Here are some of the features included in our project:
 - 👷 GitHub Actions integration to run static code formatting, unit and e2e tests on pull requests
 - 📈 Code coverage with Codecov
 - 📦 Deploy to Vercel or Azure Web Apps with GitHub Actions
+- 🧑‍💻 VSCode: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript, Jest
+- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
+- 🗺️ Sitemap.xml and robots.txt with next-sitemap
 
 <br>
 
