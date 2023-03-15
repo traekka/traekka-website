@@ -1,3 +1,25 @@
+[![test-static](https://github.com/traekka/traekka-website/actions/workflows/test-static.yaml/badge.svg)](https://github.com/traekka/traekka-website/actions/workflows/test-static.yaml)
+[![CodeQL](https://github.com/traekka/traekka-website/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/traekka/traekka-website/actions/workflows/github-code-scanning/codeql)
+[![test-unit](https://github.com/traekka/traekka-website/actions/workflows/test-unit.yaml/badge.svg)](https://github.com/traekka/traekka-website/actions/workflows/test-unit.yaml)
+[![codecov](https://codecov.io/gh/traekka/traekka-website/branch/develop/graph/badge.svg?token=FFYJUJQ7KO)](https://codecov.io/gh/traekka/traekka-website)
+[![traekka-website](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/8zmb5j&style=flat&logo=cypress)](https://cloud.cypress.io/projects/8zmb5j/runs)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/c8c8030f/traekka-website)
+
+[![nextjs](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![typescript](https://img.shields.io/badge/typescript-3178c6?style=flast&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![tailwindcss](https://img.shields.io/badge/tailwindcss-38b2ac?style=flast&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![eslint](https://img.shields.io/badge/eslint-4b32c3?style=flast&logo=eslint&logoColor=white)](https://eslint.org)
+[![stylelint](https://img.shields.io/badge/stylelint-000000?style=flast&logo=stylelint&logoColor=white)](https://stylelint.io)
+[![prettier](https://img.shields.io/badge/prettier-f7b93e?style=flast&logo=prettier&logoColor=white)](https://prettier.io)
+
+[![Traekka Website Badge](https://img.shields.io/badge/traekka.com-0e76a8?style=flat-square&logo=google-chrome&logoColor=white)](https://traekka.com)
+[![Blog Badge](https://img.shields.io/badge/hello@traekka.com-3b5998?style=flat-square&logo=Minutemailer&logoColor=white)](mailto:hello@traekka.com)
+[![Project license](https://img.shields.io/github/license/maxhoheiser/maxland.svg?style=flat-square)](LICENSE)
+[![code with love by maxhoheiser](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-maxhoheiser-ff1414.svg?style=flat-square)](https://github.com/maxhoheiser)
+
+<br>
+<br>
+
 # Traekka Website - Next.js 13 + Tailwind CSS 2 + TypeScript 4
 
 Welcome to the source code of the Traekka website! Our site is built with the latest technologies because we love technology. We use Next.js 13 as our static site generator, Tailwind CSS 2 for styling, and TypeScript 4 for added type safety. It is deployed to Vercel or Azure Web Apps.
