@@ -31,3 +31,4 @@ ignore:
   - cypress.config.js
   - jest.config.js
   - jest.setup.js
+  - next-sitemap.config.js
