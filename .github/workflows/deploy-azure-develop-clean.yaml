@@ -10,7 +10,6 @@ jobs:
     name: Delete Azure Static WebApp pre-production environment
     runs-on: ubuntu-latest
     environment: testing
-    needs: [test, build-deploy]
     env:
       STATIC_WEB_APP_DEPLOYMENT_NAME: "#${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
 
