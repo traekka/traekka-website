@@ -36,8 +36,6 @@ Our website is available at [traekka.com](https://traekka.com), where you can le
 
 ## Features
 
-Here are some of the features included in our project:
-
 - ⚡ [Next.js](https://nextjs.org) for static site generator
 - 🟦 [TypeScript](https://www.typescriptlang.org) for added type safety with
 - 💎 [Tailwind CSS](https://tailwindcss.com) for sleek and modern styling
@@ -65,95 +63,97 @@ Here are some of the features included in our project:
 
 ## Quick Starter:
 
-Ready to get started with your own project?
+### 0. Prerequisites:
 
-0. Prerequisites:
+- [GitHub](https://github.com) account
+- [Azure](https://azure.microsoft.com/en-us/) account with [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/) enabled
 
-   - [GitHub](https://github.com) account
-   - [Azure](https://azure.microsoft.com/en-us/) account with [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/) enabled
+  optional:
 
-     optional:
+  - [Cypress](https://www.cypress.io/) account
+  - [Percy](https://percy.io/) account
+  - [Codecov](https://codecov.io/) account
 
-     - [Cypress](https://www.cypress.io/) account
-     - [Percy](https://percy.io/) account
-     - [Codecov](https://codecov.io/) account
+### 1. Install dependencies:
 
-1. Install dependencies:
+- [npm](https://www.npmjs.com/get-npm)
+- [Node.js](https://nodejs.org/en/download/) (v14 or higher)
+- [Git](https://git-scm.com/downloads)
 
-   - [npm](https://www.npmjs.com/get-npm)
-   - [Node.js](https://nodejs.org/en/download/) (v14 or higher)
-   - [Git](https://git-scm.com/downloads)
+### 2. Clone the repository and install packages:
 
-2. Clone the repository and install dependencies:
+```shell
+git clone https://github.com/traekka/traekka-website.git my-project-name
+cd my-project-name
+npm install
+```
 
-   ```shell
-   git clone https://github.com/traekka/traekka-website.git my-project-name
-   cd my-project-name
-   npm install
-   ```
+### 3. Create `.env.` file with your environment variables:
 
-3. Create `.env.` file with your environment variables:
+```shell
+cp .env.example .env
+```
 
-   ```shell
-   cp .env.example .env
-   ```
+update accordingly
 
-   update accordingly
+### 4. Automatically update custom variables based on new `.env` file:
 
-4. Automatically update custom variables based on new `.env` file:
+```shell
+npm run update-variables
+```
 
-   ```shell
-   npm run update-variables
-   ```
+or manually update:
 
-   or manually update `package.json` and `cypres.config.js`
+- [ ] `package.json`
+- [ ] `cypres.config.js`
+- [ ] `src/util/AppConfig.ts`
 
-5. Configure new Git Repository:
+### 5. Configure new Git Repository:
 
-   - create new repo on GitHub
-   - create new environments `testing` `deploying`
-   - add `.env` variables as secrets to new environments
-   - set upstream to your new repo:
+- create new repo on GitHub
+- create new environments `testing` adn `deploying`
+- add `.env` variables as secrets to new environments
+- set upstream to your new repo:
 
-     ```shell
-     cd my-project-name
-     git remote rename origin upstream
-     git remote add origin $URL_TO_GITHUB_REPO
-     git push origin master
-     ```
+  ```shell
+  cd my-project-name
+  git remote rename origin upstream
+  git remote add origin $URL_TO_GITHUB_REPO
+  git push origin master
+  ```
 
-6. Run your development environment:
+### 6. Run your development environment:
 
-   ```shell
-   npm run dev
-   ```
+```shell
+npm run dev
+```
 
-   open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-7. Commit changes to your new repo:
+### 7. Commit changes to your new repo:
 
-   - create new branches accordingly to [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/) with the following naming convention:
+- create new branches accordingly to [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/) with the following naming convention:
 
-     ```shell
-     main
-     ├── develop
-         ├── feature/XX-camelCase
-         ├── bugfix/XY-camelCase
-     ```
+  ```shell
+  main
+  ├── develop
+      ├── feature/XX-camelCase
+      ├── bugfix/XY-camelCase
+  ```
 
-   - commit your changes following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines enforced by `commitlint`
-   - use `npm run commit` to commit changes with `commitizen`
-   - `husky` will run `lint-staged` to format code and run static tests
-   - run `npm run test` to run unit tests
-   - run `npm run e2e:headless` to run end-to-end tests
-   - run `npm run percy` to run visual regression tests
+- commit your changes following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines enforced by `commitlint`
+- use `npm run commit` to commit changes with `commitizen`
+- `husky` will run `lint-staged` to format code and run static tests
+- run `npm run test` to run unit tests
+- run `npm run e2e:headless` to run end-to-end tests
+- run `npm run percy` to run visual regression tests
 
-8. Create pull request:
+### 8. Create pull request:
 
-   - Github Actions will automatically run static code formatting, unit and e2e (incl visual regression) tests on pull requests
-   - Github Actions will automatically deploy to `pre-production` environment on pull requests and run e2e and visual regression tests against deployed Azure Static WebApp
+- Github Actions will automatically run static code formatting, unit and e2e (incl visual regression) tests on pull requests
+- Github Actions will automatically deploy to `pre-production` environment on pull requests and run e2e and visual regression tests against deployed Azure Static WebApp
 
-9. Merge pull request:
+### 9 . Merge pull request:
 
-   if all tests pass, merge pull request to `develop` branch
-   when ready to deploy to production, merge pull request to `main` branch
+if all tests pass, merge pull request to `develop` branch
+when ready to deploy to production, merge pull request to `main` branch
