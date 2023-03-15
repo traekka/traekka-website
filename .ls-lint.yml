@@ -1,9 +1,12 @@
 ls:
   .css: camelCase
   .js: camelCase
-  .ts: camelCase
+  .config.js: lowercase
+  .setup.js: lowercase
+  .ts: camelCase | PascalCase
+  .cy.ts: camelCase
   .tsx: camelCase | PascalCase
-  .d.tsx: PascalCase
+  .test.tsx: camelCase
   .json: kebab-case
   .yaml: kebab-case
   src/pages:
@@ -12,8 +15,6 @@ ls:
 ignore:
   - node_modules
   - out
-  - cypress/e2e
-  - tests
   - coverage
   - .github
   - .git
@@ -21,14 +22,3 @@ ignore:
   - src/pages/_app.tsx
   - src/pages/_document.tsx
   - next-env.d.ts
-  - commitlint.config.js
-  - lint-staged.config.js
-  - next.config.js
-  - postcss.config.js
-  - prettier.config.js
-  - stylelint.config.js
-  - tailwind.config.js
-  - cypress.config.js
-  - jest.config.js
-  - jest.setup.js
-  - next-sitemap.config.js
