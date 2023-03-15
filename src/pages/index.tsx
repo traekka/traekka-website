@@ -1,12 +1,10 @@
 import { Metadata } from "@/layouts/Metadata";
+import { AppConfig } from "@/utils/AppConfig";
 
 export default function Home() {
   return (
     <>
-      <Metadata
-        title="Traekka Neuroscience Solutions Presentation"
-        description="Traekka Neuroscience Solutions provides state of the art solutions for in-vivo electrophysiology research both in head-fixed and freely moving animals."
-      />
+      <Metadata title={`${AppConfig.title} Presentation`} description={AppConfig.description} />
       <main>
         <h1 className="text-5xl font-bold">Hi you are on the test homepage</h1>
         <div className="text-xl">
