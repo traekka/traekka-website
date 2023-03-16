@@ -1,9 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const withPlugins = require("next-compose-plugins");
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 
-module.exports = withBundleAnalyzer({
+const nextConfig = {
   eslint: {
     dirs: ["."],
   },
@@ -11,4 +12,6 @@ module.exports = withBundleAnalyzer({
   trailingSlash: true,
   reactStrictMode: true,
   basePath: "",
-});
+};
+
+module.exports = withPlugins([withBundleAnalyzer], nextConfig);
