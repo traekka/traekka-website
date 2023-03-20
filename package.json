@@ -51,7 +51,7 @@
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "5.55.0",
     "@typescript-eslint/parser": "5.54.1",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "commitizen": "4.3.0",
     "commitlint-plugin-function-rules": "1.7.1",
     "cssnano": "5.1.15",
